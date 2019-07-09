@@ -9,7 +9,8 @@ cmake_minimum_required(VERSION 3.5)
 find_package(PCL COMPONENTS common)
 
 # All header directories not under your control go here
-include_directories(SYSTEM ${PCL_INCLUDE_DIRS})
+# ${PCL_INCLUDE_DIRS} not required to be manually added since PCL 1.9
+# include_directories(SYSTEM)
 # Headers for this project go here
 # include_directories(include)
 
