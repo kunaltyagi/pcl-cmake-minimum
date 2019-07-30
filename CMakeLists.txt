@@ -1,6 +1,7 @@
 # Following line is required to perform compatibility checks
 # Make sure that the version is at least 3.5, as required by PCL
 cmake_minimum_required(VERSION 3.5)
+project(pcl_cmake_minimum)
 
 # Use the following to link against all the PCL libraries
 # Note: might be heavy, not the best practice
