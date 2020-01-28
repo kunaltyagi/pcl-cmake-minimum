@@ -4,10 +4,11 @@ cmake_minimum_required(VERSION 3.5)
 project(pcl_cmake_minimum)
 
 # Use the following to link against all the PCL libraries
+# Remove REQUIRED if PCL is not compulsory
 # Note: might be heavy, not the best practice
-# find_package(PCL)
+# find_package(PCL REQUIRED)
 # Prefer to use the correct component libraries instead
-find_package(PCL COMPONENTS common)
+find_package(PCL COMPONENTS common REQUIRED)
 
 # All header directories not under your control go here
 # ${PCL_INCLUDE_DIRS} not required to be manually added since PCL 1.9
